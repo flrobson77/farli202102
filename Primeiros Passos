@@ -1,0 +1,143 @@
+Regras Gerais
+ESTAVA FUNCIONANDO ANTES, TEM QUE FUNCIONAR HOJE.
+FALTOU! CORRE ATRÁS!
+
+Usuário Comum: 	sysadmin
+Senha:			ifsp@123
+
+Administrador:		root
+Senha:			ifsp@2019
+
+Protocolo - Lousa
+$ - Executar comandos como usuário comum
+# - Executar comandos como superusuário (root)
+
+As letras maiúsculas serão grifadas
+O espaço será simbolizado com letra <b> 
+
+	Principais Comandos
+Promover usuário comum para administrador
+#su - 
+-> senha do root
+
+Desligar o sistema
+#poweroff
+
+Desligar
+#poweroff
+#shutdown -h now
+#shutdown -h <tempo em minutos>
+Quero desligar daqui 10 minutos
+#shutdown -h 600
+#init 0
+
+Reboot
+#reboot
+#shutdown -r now
+#init 6
+
+Manual do sistema
+#man <Instrução que deseja consultar>
+#man shutdown
+#man ls
+Para sair do man pressione a tecla <q>
+
+Fazer logoff
+#exit
+ou
+pressione as teclas simultaneamente <ctrl> + <d>
+
+Limpar a tela
+#clear
+ou
+pressione as teclas simultaneamente <ctrl> + <l>
+
+Está no ambiente gráfico e precisa alternar para o terminal de texto use a combinação de teclas:
+<ctrl> + <alt> + F1 ou
+<ctrl> + <alt> + F2 ou
+<ctrl> + <alt> + F3 ou
+<ctrl> + <alt> + F4 ou
+<ctrl> + <alt> + F5 ou
+<ctrl> + <alt> + F6
+
+Está no terminal de texto e precisa alternar para o ambiente gráfico, se tiver instalado, use a combinação de teclas:
+<ctrl> + <alt> + F7 ou
+<ctrl> + <alt> + F8
+
+* Depende da distribuição 
+
+Está no terminal de texto e precisa alternar entre terminais de texto
+<alt> + F1 ou
+<alt> + F2 ou
+<alt> + F3 ou
+<alt> + F4 ou
+<alt> + F5 ou
+<alt> + F6
+
+O linux possui 64 terminais desse seis são controlado pelo usuário os outro podem ser acionados por exemplo para direcionar resultados de instruções de log, de firewall, de algum serviço.
+No ambiente gráfico aplicação é um emulador de terminal
+Todos os terminais são arquivos armazenados no diretório /dev
+
+
+Principais Comandos
+Exibe o diretório que estou trabalhando no momento
+#pwd 
+
+Este comando mostra de maneira bem simples os usuários que estão logados no sistema
+#w
+
+Este comando mostra somente o nome do usuário logado
+#whoami - indica quem é o usuário.
+
+Comando para criar arquivos vazios
+#touch .<arquivo>
+#touch texto.txt
+
+Comando para criar diretório vazios
+#mkdir <diretorio>
+#mkdir pasta
+
+Comando para criar arvore de diretórios
+#mkdir -p projeto/imagens
+
+Comando para listar arquivos e diretórios
+#ls - arquivo de diretórios.
+
+Comando para listar arquivos e diretórios com mais detalhes
+#ls -l
+
+Todo arquivo ou diretório com . antes do nome este será oculto
+Cria arquivo vazio e oculto
+#touch .oculto.txt
+Cria diretório vazio e oculto
+#mkdir .diretoriooculto
+
+
+Comando para listar arquivos e diretórios inclusive os ocultos
+#ls -a
+
+Comando para listar arquivos e diretórios inclusive os ocultos com mais detalhes
+#ls -la
+
+Exibe histórico de comandos digitados
+#history
+
+Se quiser executar alguma instrução do historico digite ! + número da linha
+#!10
+- O shell irá executar o que está na linha 10
+
+Comando para apagar arquivos
+#rm <nome do arquivo>
+#rm exemplo.txt
+
+Comando para apagar um diretório vazio
+#rmdir <diretorio>
+#rmdir pasta
+
+Comando para forçar eliminar diretório com arquivos e subdiretórios
+#rm -rf <nome do diretório>
+#rm -rf projeto
+
+Comando para ecoar mensagens na tela
+#echo <mensagem>
+#echo ola
