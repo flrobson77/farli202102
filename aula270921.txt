@@ -1,0 +1,1387 @@
+sysadmin@operacao:~$ echo --help
+--help
+
+sysadmin@operacao:~$ help echo
+echo: echo [-neE] [ARG ...]
+    Write arguments to the standard output.
+    
+    Display the ARGs, separated by a single space character and followed by a
+    newline, on the standard output.
+    
+    Options:
+      -n	do not append a newline
+      -e	enable interpretation of the following backslash escapes
+      -E	explicitly suppress interpretation of backslash escapes
+    
+    `echo' interprets the following backslash-escaped characters:
+      \a	alert (bell)
+      \b	backspace
+      \c	suppress further output
+      \e	escape character
+      \E	escape character
+      \f	form feed
+      \n	new line
+      \r	carriage return
+      \t	horizontal tab
+      \v	vertical tab
+      \\	backslash
+      \0nnn	the character whose ASCII code is NNN (octal).  NNN can be
+    		0 to 3 octal digits
+      \xHH	the eight-bit character whose value is HH (hexadecimal).  HH
+    		can be one or two hex digits
+      \uHHHH	the Unicode character whose value is the hexadecimal value HHHH.
+    		HHHH can be one to four hex digits.
+      \UHHHHHHHH the Unicode character whose value is the hexadecimal value
+    		HHHHHHHH. HHHHHHHH can be one to eight hex digits.
+    
+    Exit Status:
+
+sysadmin@operacao:~$ man echo
+sysadmin@operacao:~$ man ls
+sysadmin@operacao:~$ man shutdown
+sysadmin@operacao:~$ passwd
+Mudando senha para sysadmin.
+Current password: 
+passwd : Erro de manipulação de token de autenticação
+passwd: senha inalterada
+sysadmin@operacao:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-timesync:x:101:102:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+systemd-network:x:102:103:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:103:104:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:104:110::/nonexistent:/usr/sbin/nologin
+dnsmasq:x:105:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+avahi-autoipd:x:106:112:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/usr/sbin/nologin
+usbmux:x:107:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+rtkit:x:108:113:RealtimeKit,,,:/proc:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+pulse:x:110:116:PulseAudio daemon,,,:/var/run/pulse:/usr/sbin/nologin
+speech-dispatcher:x:111:29:Speech Dispatcher,,,:/var/run/speech-dispatcher:/bin/false
+avahi:x:112:119:Avahi mDNS daemon,,,:/var/run/avahi-daemon:/usr/sbin/nologin
+saned:x:113:120::/var/lib/saned:/usr/sbin/nologin
+lightdm:x:114:121:Light Display Manager:/var/lib/lightdm:/bin/false
+sysadmin:x:1000:1000:sysadmin,,,:/home/sysadmin:/bin/bash
+systemd-coredump:x:999:999:systemd Core Dumper:/:/usr/sbin/nologin
+robson:x:1001:1001:,,,:/home/robson:/bin/bash
+
+sysadmin@operacao:~$ man passwd
+sysadmin@operacao:~$ man 5 passwd
+sysadmin@operacao:~$ apropos cl
+uri (7)              - identificador uniforme de recursos (URI), incluindo um...
+url (7)              - identificador uniforme de recursos (URI), incluindo um...
+Compose (5)          - X client mappings for multi-key input sequences
+FD_CLR (3)           - synchronous I/O multiplexing
+__clone2 (2)         - create a child process
+acl (5)              - Access Control Lists
+addseverity (3)      - introduce new severity classes
+adjtime (3)          - correct the time to synchronize the system clock
+adjtime_config (5)   - information about hardware clock setting and drift factor
+adjtimex (2)         - tune kernel clock
+alarm (2)            - set an alarm clock for delivery of a signal
+arm_fadvise (2)      - predeclare an access pattern for file data
+arm_fadvise64_64 (2) - predeclare an access pattern for file data
+Authen::SASL::Perl::ANONYMOUS (3pm) - Anonymous Authentication class
+Authen::SASL::Perl::CRAM_MD5 (3pm) - CRAM MD5 Authentication class
+Authen::SASL::Perl::DIGEST_MD5 (3pm) - Digest MD5 Authentication class
+Authen::SASL::Perl::EXTERNAL (3pm) - External Authentication class
+Authen::SASL::Perl::GSSAPI (3pm) - GSSAPI (Kerberosv5) Authentication class
+Authen::SASL::Perl::LOGIN (3pm) - Login Authentication class
+Authen::SASL::Perl::PLAIN (3pm) - Plain Login Authentication class
+catclose (3)         - open/close a message catalog
+catopen (3)          - open/close a message catalog
+chacl (1)            - change the access control list of a file or directory
+CIRCLEQ_ENTRY (3)    - implementations of singly-linked lists, singly-linked ...
+CIRCLEQ_HEAD (3)     - implementations of singly-linked lists, singly-linked ...
+CIRCLEQ_INIT (3)     - implementations of singly-linked lists, singly-linked ...
+CIRCLEQ_INSERT_AFTER (3) - implementations of singly-linked lists, singly-lin...
+CIRCLEQ_INSERT_BEFORE (3) - implementations of singly-linked lists, singly-li...
+CIRCLEQ_INSERT_HEAD (3) - implementations of singly-linked lists, singly-link...
+CIRCLEQ_INSERT_TAIL (3) - implementations of singly-linked lists, singly-link...
+CIRCLEQ_REMOVE (3)   - implementations of singly-linked lists, singly-linked ...
+clear (1)            - clear the terminal screen
+clear_console (1)    - clear the console
+clearenv (3)         - clear the environment
+clearerr (3)         - check and reset stream status
+clearerr_unlocked (3) - nonlocking stdio functions
+client.conf (5)      - client configuration file for cups
+clnt_broadcast (3)   - library routines for remote procedure calls
+clnt_call (3)        - library routines for remote procedure calls
+clnt_control (3)     - library routines for remote procedure calls
+clnt_create (3)      - library routines for remote procedure calls
+clnt_destroy (3)     - library routines for remote procedure calls
+clnt_freeres (3)     - library routines for remote procedure calls
+clnt_geterr (3)      - library routines for remote procedure calls
+clnt_pcreateerror (3) - library routines for remote procedure calls
+clnt_perrno (3)      - library routines for remote procedure calls
+clnt_perror (3)      - library routines for remote procedure calls
+clnt_spcreateerror (3) - library routines for remote procedure calls
+clnt_sperrno (3)     - library routines for remote procedure calls
+clnt_sperror (3)     - library routines for remote procedure calls
+clntraw_create (3)   - library routines for remote procedure calls
+clnttcp_create (3)   - library routines for remote procedure calls
+clntudp_bufcreate (3) - library routines for remote procedure calls
+clntudp_create (3)   - library routines for remote procedure calls
+clock (3)            - determine processor time
+clock_getcpuclockid (3) - obtain ID of a process CPU-time clock
+clock_getres (2)     - clock and time functions
+clock_getres (3)     - clock and time functions
+clock_gettime (2)    - clock and time functions
+clock_gettime (3)    - clock and time functions
+clock_nanosleep (2)  - high-resolution sleep with specifiable clock
+clock_settime (2)    - clock and time functions
+clock_settime (3)    - clock and time functions
+clog (3)             - natural logarithm of a complex number
+clog10 (3)           - base-10 logarithm of a complex number
+clog10f (3)          - base-10 logarithm of a complex number
+clog10l (3)          - base-10 logarithm of a complex number
+clog2 (3)            - base-2 logarithm of a complex number
+clog2f (3)           - base-2 logarithm of a complex number
+clog2l (3)           - base-2 logarithm of a complex number
+clogf (3)            - natural logarithm of a complex number
+clogl (3)            - natural logarithm of a complex number
+clone (2)            - create a child process
+clone2 (2)           - create a child process
+close (2)            - close a file descriptor
+closedir (3)         - close a directory
+closelog (3)         - send messages to the system logger
+openproc (3)         - initialize process information from /proc/
+CPU_CLR (3)          - macros for manipulating CPU sets
+CPU_CLR_S (3)        - macros for manipulating CPU sets
+cupsaddsmb (8)       - export printers to samba for windows clients
+cupsdisable (8)      - stop/start printers and classes
+cupsenable (8)       - stop/start printers and classes
+dbus-cleanup-sockets (1) - clean up leftover sockets in a directory
+dhclient (8)         - Dynamic Host Configuration Protocol Client
+dhclient-script (8)  - DHCP client network configuration script
+dhclient.conf (5)    - DHCP client configuration file
+dhclient.leases (5)  - DHCP client lease database
+dirmngr-client (1)   - Tool to access the Dirmngr services
+dlclose (3)          - open and close a shared object
+dlmopen (3)          - open and close a shared object
+dlopen (3)           - open and close a shared object
+Dpkg::Changelog (3perl) - base class to implement a changelog parser
+editor (1)           - Nano's ANOther editor, an enhanced free Pico clone
+erfcl (3)            - complementary error function
+Error::Simple (3pm)  - the simple error sub-class of Error
+execl (3)            - execute a file
+execle (3)           - execute a file
+execlp (3)           - execute a file
+fadvise64 (2)        - predeclare an access pattern for file data
+fadvise64_64 (2)     - predeclare an access pattern for file data
+fclose (3)           - close a stream
+fcloseall (3)        - close all open streams
+feclearexcept (3)    - floating-point rounding and exception handling
+finite (3)           - BSD floating-point classification functions
+finitef (3)          - BSD floating-point classification functions
+finitel (3)          - BSD floating-point classification functions
+fpclassify (3)       - floating-point classification macros
+fts_close (3)        - traverse a file hierarchy
+getfacl (1)          - get file access control lists
+git-check-ignore (1) - Debug gitignore / exclude files
+git-clean (1)        - Remove untracked files from the working tree
+git-clone (1)        - Clone a repository into a new directory
+git-gc (1)           - Cleanup unnecessary files and optimize the local repos...
+gitcli (7)           - Git command-line interface and conventions
+Glib::Object::Subclass (3pm) - register a perl class as a GObject class
+Glib::ParseXSDoc (3pm) - Parse POD and XSub declarations from XS files.
+gpg-wks-client (1)   - Client for the Web Key Service
+HTML::Element (3pm)  - Class for objects that represent HTML elements
+HTML::Form (3pm)     - Class that represents an HTML form element
+HTML::Formatter (3pm) - Base class for HTML formatters
+HTML::Parser (3pm)   - HTML parser class
+HTML::Tree::AboutObjects (3pm) - - article: "User's View of Object-Oriented M...
+HTML::Tree::AboutTrees (3pm) - - article on tree-shaped data structures in Perl
+HTML::Tree::Scanning (3pm) - - article: "Scanning HTML"
+HTTP::Daemon (3pm)   - a simple http server class
+HTTP::Headers (3pm)  - Class encapsulating HTTP Message headers
+HTTP::Message (3pm)  - HTTP style message (base class)
+hwclock (5)          - variables that affect the behaviour of the hwclock boo...
+hwclock (8)          - time clocks utility
+hypot (3)            - Euclidean distance function
+hypotf (3)           - Euclidean distance function
+hypotl (3)           - Euclidean distance function
+iconv_close (3)      - deallocate descriptor for character set conversion
+ioctl_ficlone (2)    - share some the data of one file with another file
+ioctl_ficlonerange (2) - share some the data of one file with another file
+ionice (1)           - set or get process I/O scheduling class and priority
+ioprio_get (2)       - get/set I/O scheduling class and priority
+ioprio_set (2)       - get/set I/O scheduling class and priority
+isalnum (3)          - character classification functions
+isalnum_l (3)        - character classification functions
+isalpha (3)          - character classification functions
+isalpha_l (3)        - character classification functions
+isascii (3)          - character classification functions
+isascii_l (3)        - character classification functions
+isblank (3)          - character classification functions
+isblank_l (3)        - character classification functions
+iscntrl (3)          - character classification functions
+iscntrl_l (3)        - character classification functions
+isdigit (3)          - character classification functions
+isdigit_l (3)        - character classification functions
+isfinite (3)         - floating-point classification macros
+isgraph (3)          - character classification functions
+isgraph_l (3)        - character classification functions
+isinf (3)            - floating-point classification macros
+isinff (3)           - BSD floating-point classification functions
+isinfl (3)           - BSD floating-point classification functions
+islower (3)          - character classification functions
+islower_l (3)        - character classification functions
+isnan (3)            - floating-point classification macros
+isnanf (3)           - BSD floating-point classification functions
+isnanl (3)           - BSD floating-point classification functions
+isnormal (3)         - floating-point classification macros
+isprint (3)          - character classification functions
+isprint_l (3)        - character classification functions
+ispunct (3)          - character classification functions
+ispunct_l (3)        - character classification functions
+isspace (3)          - character classification functions
+isspace_l (3)        - character classification functions
+isupper (3)          - character classification functions
+isupper_l (3)        - character classification functions
+iswctype (3)         - wide-character classification
+isxdigit (3)         - character classification functions
+isxdigit_l (3)       - character classification functions
+klogctl (3)          - read and/or clear kernel message ring buffer; set cons...
+libsmbclient (7)     - An extension library for browsers and that can be used...
+lpadmin (8)          - configure cups printers and classes
+LWP::MemberMixin (3pm) - Member access mixin class
+LWP::Protocol (3pm)  - Base class for LWP protocols
+LWP::RobotUA (3pm)   - a class for well-behaved Web robots
+LWP::UserAgent (3pm) - Web user agent class
+Mail::Field (3pm)    - Base class for manipulation of mail header fields
+migrate-pubring-from-classic-gpg (1) - Migrate a public keyring from "classic...
+mmcli (1)            - Control and monitor the ModemManager
+mq_close (3)         - close a message queue descriptor
+nano (1)             - Nano's ANOther editor, an enhanced free Pico clone
+Net::DBus::BaseObject (3pm) - base class for exporting objects to the bus
+Net::DBus::Binding::Connection (3pm) - A connection between client and server
+Net::DBus::Binding::Message (3pm) - Base class for messages
+Net::DBus::Service (3pm) - Provide a service to the bus for clients to use
+Net::HTTP (3pm)      - Low-level HTTP connection (client)
+Net::HTTP::NB (3pm)  - Non-blocking HTTP client
+Net::HTTPS (3pm)     - Low-level HTTP over SSL/TLS connection (client)
+nmcli (1)            - command-line tool for controlling NetworkManager
+nmcli-examples (7)   - usage examples of nmcli
+ntfsclone (8)        - Efficiently clone, image, restore or rescue an NTFS
+ntfscluster (8)      - identify files in a specified region of an NTFS volume.
+ntp_adjtime (3)      - tune kernel clock
+oclock (1)           - round X clock
+openssl-s_client (1ssl) - SSL/TLS client program
+openssl-ts (1ssl)    - Time Stamping Authority tool (client/server)
+openssl-tsget (1ssl) - Time Stamping HTTP/HTTPS client
+Pango::Attribute (3pm) - Pango base class for attributes
+Pango::Renderer (3pm) - a base class for pango rendering
+pclose (3)           - pipe stream to or from a process
+pico (1)             - Nano's ANOther editor, an enhanced free Pico clone
+pkcon (1)            - PackageKit console client
+pkmon (1)            - PackageKit console client
+posix_fadvise (2)    - predeclare an access pattern for file data
+pthread_cleanup_pop (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_pop_restore_np (3) - push and pop thread cancellation clean-u...
+pthread_cleanup_push (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_push_defer_np (3) - push and pop thread cancellation clean-up...
+pthread_getcpuclockid (3) - retrieve ID of a thread's CPU time clock
+pulse-cli-syntax (5) - PulseAudio Command Line Interface Syntax
+pulse-client.conf (5) - PulseAudio client configuration file
+py3clean (1)         - removes .pyc and .pyo files
+pyclean (1)          - removes .pyc and .pyo files
+rlogin (1)           - OpenSSH SSH client (remote login program)
+rsh (1)              - OpenSSH SSH client (remote login program)
+rstart (1)           - a sample implementation of a Remote Start client
+rt_sigreturn (2)     - return from signal handler and cleanup stack frame
+rtc (4)              - real-time clock
+s_client (1ssl)      - SSL/TLS client program
+sem_close (3)        - close a named semaphore
+sessreg (1)          - manage utmpx/wtmpx entries for non-init clients
+setfacl (1)          - set file access control lists
+sigreturn (2)        - return from signal handler and cleanup stack frame
+slogin (1)           - OpenSSH SSH client (remote login program)
+ssh (1)              - OpenSSH SSH client (remote login program)
+ssh_config (5)       - OpenSSH SSH client configuration files
+syslog (2)           - read and/or clear kernel message ring buffer; set cons...
+syslog (3)           - read and/or clear kernel message ring buffer; set cons...
+systemd-boot-check-no-failures.service (8) - verify that the system booted up...
+systemd-tmpfiles (8) - Creates, deletes and cleans up volatile and temporary ...
+systemd-tmpfiles-clean.service (8) - Creates, deletes and cleans up volatile ...
+systemd-tmpfiles-clean.timer (8) - Creates, deletes and cleans up volatile an...
+systemd-tmpfiles-setup-dev.service (8) - Creates, deletes and cleans up volat...
+systemd-tmpfiles-setup.service (8) - Creates, deletes and cleans up volatile ...
+sysusers.d (5)       - Declarative allocation of system users and groups
+tc-bpf (8)           - BPF programmable classifier and actions for ingress/eg...
+tc-cbq (8)           - Class Based Queueing
+tc-cbq-details (8)   - Class Based Queueing
+timerclear (3)       - timeval operations
+tmpfiles.d (5)       - Configuration for creation, deletion and cleaning of v...
+truncl (3)           - round to integer, toward zero
+ts (1ssl)            - Time Stamping Authority tool (client/server)
+tsget (1ssl)         - Time Stamping HTTP/HTTPS client
+urn (7)              - uniform resource identifier (URI), including a URL or URN
+viewres (1)          - graphical class browser for Xt
+wctype (3)           - wide-character classification
+wpa_action (8)       - wpa_cli action script
+wpa_cli (8)          - WPA command line client
+wpa_supplicant (8)   - Wi-Fi Protected Access client and IEEE 802.1X supplicant
+X11::Protocol::Connection (3pm) - Perl module abstract base class for X11 cli...
+X11::Protocol::Connection::FileHandle (3pm) - Perl module base class for File...
+X11::Protocol::Connection::Socket (3pm) - Perl module base class for IO::Sock...
+xclipboard (1)       - X clipboard client
+xclock (1)           - analog / digital clock for X
+XCompose (5)         - X client mappings for multi-key input sequences
+xfce4-dict (1)       - a client program to query different dictionaries
+xfontsel (1)         - point and click selection of X11 font names
+xkill (1)            - kill a client by its X resource
+xlsclients (1)       - list client applications running on a display
+XML::Parser::Expat (3pm) - Lowlevel access to James Clark's expat XML parser
+sysadmin@operacao:~$ apropos cle
+CIRCLEQ_ENTRY (3)    - implementations of singly-linked lists, singly-linked ...
+CIRCLEQ_HEAD (3)     - implementations of singly-linked lists, singly-linked ...
+CIRCLEQ_INIT (3)     - implementations of singly-linked lists, singly-linked ...
+CIRCLEQ_INSERT_AFTER (3) - implementations of singly-linked lists, singly-lin...
+CIRCLEQ_INSERT_BEFORE (3) - implementations of singly-linked lists, singly-li...
+CIRCLEQ_INSERT_HEAD (3) - implementations of singly-linked lists, singly-link...
+CIRCLEQ_INSERT_TAIL (3) - implementations of singly-linked lists, singly-link...
+CIRCLEQ_REMOVE (3)   - implementations of singly-linked lists, singly-linked ...
+clear (1)            - clear the terminal screen
+clear_console (1)    - clear the console
+clearenv (3)         - clear the environment
+clearerr (3)         - check and reset stream status
+clearerr_unlocked (3) - nonlocking stdio functions
+dbus-cleanup-sockets (1) - clean up leftover sockets in a directory
+execle (3)           - execute a file
+feclearexcept (3)    - floating-point rounding and exception handling
+git-clean (1)        - Remove untracked files from the working tree
+git-gc (1)           - Cleanup unnecessary files and optimize the local repos...
+HTML::Tree::AboutObjects (3pm) - - article: "User's View of Object-Oriented M...
+HTML::Tree::AboutTrees (3pm) - - article on tree-shaped data structures in Perl
+HTML::Tree::Scanning (3pm) - - article: "Scanning HTML"
+klogctl (3)          - read and/or clear kernel message ring buffer; set cons...
+pthread_cleanup_pop (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_pop_restore_np (3) - push and pop thread cancellation clean-u...
+pthread_cleanup_push (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_push_defer_np (3) - push and pop thread cancellation clean-up...
+py3clean (1)         - removes .pyc and .pyo files
+pyclean (1)          - removes .pyc and .pyo files
+rt_sigreturn (2)     - return from signal handler and cleanup stack frame
+sigreturn (2)        - return from signal handler and cleanup stack frame
+syslog (2)           - read and/or clear kernel message ring buffer; set cons...
+syslog (3)           - read and/or clear kernel message ring buffer; set cons...
+systemd-boot-check-no-failures.service (8) - verify that the system booted up...
+systemd-tmpfiles (8) - Creates, deletes and cleans up volatile and temporary ...
+systemd-tmpfiles-clean.service (8) - Creates, deletes and cleans up volatile ...
+systemd-tmpfiles-clean.timer (8) - Creates, deletes and cleans up volatile an...
+systemd-tmpfiles-setup-dev.service (8) - Creates, deletes and cleans up volat...
+systemd-tmpfiles-setup.service (8) - Creates, deletes and cleans up volatile ...
+timerclear (3)       - timeval operations
+tmpfiles.d (5)       - Configuration for creation, deletion and cleaning of v...
+sysadmin@operacao:~$ apropos clea
+clear (1)            - clear the terminal screen
+clear_console (1)    - clear the console
+clearenv (3)         - clear the environment
+clearerr (3)         - check and reset stream status
+clearerr_unlocked (3) - nonlocking stdio functions
+dbus-cleanup-sockets (1) - clean up leftover sockets in a directory
+feclearexcept (3)    - floating-point rounding and exception handling
+git-clean (1)        - Remove untracked files from the working tree
+git-gc (1)           - Cleanup unnecessary files and optimize the local repos...
+klogctl (3)          - read and/or clear kernel message ring buffer; set cons...
+pthread_cleanup_pop (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_pop_restore_np (3) - push and pop thread cancellation clean-u...
+pthread_cleanup_push (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_push_defer_np (3) - push and pop thread cancellation clean-up...
+py3clean (1)         - removes .pyc and .pyo files
+pyclean (1)          - removes .pyc and .pyo files
+rt_sigreturn (2)     - return from signal handler and cleanup stack frame
+sigreturn (2)        - return from signal handler and cleanup stack frame
+syslog (2)           - read and/or clear kernel message ring buffer; set cons...
+syslog (3)           - read and/or clear kernel message ring buffer; set cons...
+systemd-boot-check-no-failures.service (8) - verify that the system booted up...
+systemd-tmpfiles (8) - Creates, deletes and cleans up volatile and temporary ...
+systemd-tmpfiles-clean.service (8) - Creates, deletes and cleans up volatile ...
+systemd-tmpfiles-clean.timer (8) - Creates, deletes and cleans up volatile an...
+systemd-tmpfiles-setup-dev.service (8) - Creates, deletes and cleans up volat...
+systemd-tmpfiles-setup.service (8) - Creates, deletes and cleans up volatile ...
+timerclear (3)       - timeval operations
+tmpfiles.d (5)       - Configuration for creation, deletion and cleaning of v...
+sysadmin@operacao:~$ apropos clean
+dbus-cleanup-sockets (1) - clean up leftover sockets in a directory
+git-clean (1)        - Remove untracked files from the working tree
+git-gc (1)           - Cleanup unnecessary files and optimize the local repos...
+pthread_cleanup_pop (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_pop_restore_np (3) - push and pop thread cancellation clean-u...
+pthread_cleanup_push (3) - push and pop thread cancellation clean-up handlers
+pthread_cleanup_push_defer_np (3) - push and pop thread cancellation clean-up...
+py3clean (1)         - removes .pyc and .pyo files
+pyclean (1)          - removes .pyc and .pyo files
+rt_sigreturn (2)     - return from signal handler and cleanup stack frame
+sigreturn (2)        - return from signal handler and cleanup stack frame
+systemd-boot-check-no-failures.service (8) - verify that the system booted up...
+systemd-tmpfiles (8) - Creates, deletes and cleans up volatile and temporary ...
+systemd-tmpfiles-clean.service (8) - Creates, deletes and cleans up volatile ...
+systemd-tmpfiles-clean.timer (8) - Creates, deletes and cleans up volatile an...
+systemd-tmpfiles-setup-dev.service (8) - Creates, deletes and cleans up volat...
+systemd-tmpfiles-setup.service (8) - Creates, deletes and cleans up volatile ...
+tmpfiles.d (5)       - Configuration for creation, deletion and cleaning of v...
+sysadmin@operacao:~$ apropos cat
+catman (8)           - cria ou atualiza as páginas de manual pré-formatadas
+debconf-communicate (1) - comunica-se com debconf
+PAM (7)              - Pluggable Authentication Modules for Linux
+aligned_alloc (3)    - allocate aligned memory
+alloc_hugepages (2)  - allocate or free huge pages
+alloca (3)           - allocate memory that is automatically freed
+appres (1)           - list X application resource database
+apt-secure (8)       - Archive authentication support for APT
+asprintf (3)         - print to allocated string
+Authen::SASL (3pm)   - SASL Authentication framework
+Authen::SASL::Perl (3pm) - - Perl implementation of the SASL Authentication f...
+Authen::SASL::Perl::ANONYMOUS (3pm) - Anonymous Authentication class
+Authen::SASL::Perl::CRAM_MD5 (3pm) - CRAM MD5 Authentication class
+Authen::SASL::Perl::DIGEST_MD5 (3pm) - Digest MD5 Authentication class
+Authen::SASL::Perl::EXTERNAL (3pm) - External Authentication class
+Authen::SASL::Perl::GSSAPI (3pm) - GSSAPI (Kerberosv5) Authentication class
+Authen::SASL::Perl::LOGIN (3pm) - Login Authentication class
+Authen::SASL::Perl::PLAIN (3pm) - Plain Login Authentication class
+backtrace (3)        - support for application self-debugging
+backtrace_symbols (3) - support for application self-debugging
+backtrace_symbols_fd (3) - support for application self-debugging
+bdftruncate (1)      - generate truncated BDF font from ISO 10646-1-encoded B...
+bindtextdomain (3)   - set directory containing message catalogs
+blkid (8)            - locate/print block device attributes
+bzcat (1)            - decompresses files to stdout
+ca (1ssl)            - sample minimal CA application
+CA.pl (1ssl)         - friendlier interface for OpenSSL certificate programs
+calloc (3)           - allocate and free dynamic memory
+cat (1)              - concatenate files and print on the standard output
+catan (3)            - complex arc tangents
+catanf (3)           - complex arc tangents
+catanh (3)           - complex arc tangents hyperbolic
+catanhf (3)          - complex arc tangents hyperbolic
+catanhl (3)          - complex arc tangents hyperbolic
+catanl (3)           - complex arc tangents
+catchsegv (1)        - Catch segmentation faults in programs
+catclose (3)         - open/close a message catalog
+catgets (3)          - get message from a message catalog
+catopen (3)          - open/close a message catalog
+cfree (3)            - free allocated memory
+crl2pkcs7 (1ssl)     - Create a PKCS#7 structure from a CRL and certificates
+ct (7ssl)            - Certificate Transparency
+cupstestdsc (1)      - test conformance of postscript files (deprecated)
+deallocvt (1)        - deallocate unused virtual consoles
+dup (2)              - duplicate a file descriptor
+dup2 (2)             - duplicate a file descriptor
+dup3 (2)             - duplicate a file descriptor
+duplocale (3)        - duplicate a locale object
+editres (1)          - a dynamic resource editor for X Toolkit applications
+epoll (7)            - I/O event notification facility
+eventfd (2)          - create a file descriptor for event notification
+eventfd2 (2)         - create a file descriptor for event notification
+eventfd_read (3)     - create a file descriptor for event notification
+eventfd_write (3)    - create a file descriptor for event notification
+exo-open (1)         - Open URLs and launch preferred applications
+exo-preferred-applications (1) - Select preferred applications for Xfce deskt...
+fallocate (1)        - preallocate or deallocate space to a file
+fallocate (2)        - manipulate file space
+fc-cat (1)           - read font information cache files
+File::BaseDir (3pm)  - Use the Freedesktop.org base directory specification
+File::MimeInfo::Applications (3pm) - Find programs to open a file by mimetype
+finite (3)           - BSD floating-point classification functions
+finitef (3)          - BSD floating-point classification functions
+finitel (3)          - BSD floating-point classification functions
+fpclassify (3)       - floating-point classification macros
+free (3)             - allocate and free dynamic memory
+free_hugepages (2)   - allocate or free huge pages
+ftruncate (2)        - truncate a file to a specified length
+ftruncate64 (2)      - truncate a file to a specified length
+gapplication (1)     - D-Bus application launcher
+gencat (1)           - Generate message catalog
+getpid (2)           - get process identification
+getppid (2)          - get process identification
+gets (3)             - get a string from standard input (DEPRECATED)
+gettid (2)           - get thread identification
+git-cat-file (1)     - Provide content or type and size information for repos...
+Glib::Signal (3pm)   - Object customization and general purpose notification
+gpg-connect-agent (1) - Communicate with a running agent
+gsec (1)             - - deprecated Firebird user management utility
+gtk-launch (1)       - Launch an application
+gvfs-cat (1)         - (assunto desconhecido)
+gvfs-less (1)        - Execute less on the output of gvfs-cat
+HTML::Parse (3pm)    - Deprecated, a wrapper around HTML::TreeBuilder
+iconv_close (3)      - deallocate descriptor for character set conversion
+iconv_open (3)       - allocate descriptor for character set conversion
+index (3)            - locate character in string
+IO::Socket::SSL::Utils (3pm) - - loading, storing, creating certificates and ...
+ipc (5)              - System V interprocess communication mechanisms
+isalnum (3)          - character classification functions
+isalnum_l (3)        - character classification functions
+isalpha (3)          - character classification functions
+isalpha_l (3)        - character classification functions
+isascii (3)          - character classification functions
+isascii_l (3)        - character classification functions
+isblank (3)          - character classification functions
+isblank_l (3)        - character classification functions
+iscntrl (3)          - character classification functions
+iscntrl_l (3)        - character classification functions
+isdigit (3)          - character classification functions
+isdigit_l (3)        - character classification functions
+isfinite (3)         - floating-point classification macros
+isgraph (3)          - character classification functions
+isgraph_l (3)        - character classification functions
+isinf (3)            - floating-point classification macros
+isinff (3)           - BSD floating-point classification functions
+isinfl (3)           - BSD floating-point classification functions
+islower (3)          - character classification functions
+islower_l (3)        - character classification functions
+isnan (3)            - floating-point classification macros
+isnanf (3)           - BSD floating-point classification functions
+isnanl (3)           - BSD floating-point classification functions
+isnormal (3)         - floating-point classification macros
+isprint (3)          - character classification functions
+isprint_l (3)        - character classification functions
+ispunct (3)          - character classification functions
+ispunct_l (3)        - character classification functions
+isspace (3)          - character classification functions
+isspace_l (3)        - character classification functions
+issue (5)            - prelogin message and identification file
+isupper (3)          - character classification functions
+isupper_l (3)        - character classification functions
+iswctype (3)         - wide-character classification
+isxdigit (3)         - character classification functions
+isxdigit_l (3)       - character classification functions
+java (1)             - Launches a Java application.
+keytool (1)          - Manages a keystore (database) of cryptographic keys, X...
+LWP::Authen::Ntlm (3pm) - Library for enabling NTLM authentication (Microsoft...
+LWP::Debug (3pm)     - deprecated
+lzcat (1)            - Compress or decompress .xz and .lzma files
+mailcap.order (5)    - the mailcap ordering specifications
+mallinfo (3)         - obtain memory allocation information
+malloc (3)           - allocate and free dynamic memory
+malloc_stats (3)     - print memory allocation statistics
+malloc_usable_size (3) - obtain size of block of memory allocated from heap
+mallopt (3)          - set memory allocation parameters
+memalign (3)         - allocate aligned memory
+memfrob (3)          - frobnicate (encrypt) a memory area
+memmem (3)           - locate a substring
+mq_notify (2)        - register for notification when a message is available
+mq_notify (3)        - register for notification when a message is available
+Net::DBus::Error (3pm) - Error details for remote method invocation
+Net::DBus::Reactor (3pm) - application event loop
+netcat (1)           - TCP/IP swiss army knife
+netlink (7)          - communication between kernel and user space (AF_NETLINK)
+notify-send (1)      - a program to send desktop notifications
+nseq (1ssl)          - create or examine a Netscape certificate sequence
+ntfscat (8)          - print NTFS files and streams on the standard output
+ntfsfallocate (8)    - preallocate space to a file on an NTFS volume
+ntfstruncate (8)     - truncate a file on an NTFS volume
+ocsp (1ssl)          - Online Certificate Status Protocol utility
+openssl-ca (1ssl)    - sample minimal CA application
+openssl-crl2pkcs7 (1ssl) - Create a PKCS#7 structure from a CRL and certificates
+openssl-nseq (1ssl)  - create or examine a Netscape certificate sequence
+openssl-ocsp (1ssl)  - Online Certificate Status Protocol utility
+openssl-req (1ssl)   - PKCS#10 certificate request and certificate generating...
+openssl-verify (1ssl) - Utility to verify certificates
+openssl-x509 (1ssl)  - Certificate display and signing utility
+os-release (5)       - Operating system identification
+pacat (1)            - Play back or record raw or encoded audio streams on a ...
+pam (7)              - Pluggable Authentication Modules for Linux
+pam_faildelay (8)    - Change the delay on failure per-application
+pam_timestamp (8)    - Authenticate using cached successful authentication at...
+pam_unix (8)         - Module for traditional password authentication
+pam_userdb (8)       - PAM module to authenticate against a db database
+perlivp (1)          - Perl Installation Verification Procedure
+pkey_alloc (2)       - allocate or free a protection key
+pkey_free (2)        - allocate or free a protection key
+pkttyagent (1)       - Textual authentication helper
+posix_fallocate (3)  - allocate file space
+posix_memalign (3)   - allocate aligned memory
+pppd-radius (8)      - RADIUS authentication plugin for pppd (8)
+precat (1)           - prefix delta compressor for Aspell
+program_invocation_name (3) - obtain name used to invoke calling program
+program_invocation_short_name (3) - obtain name used to invoke calling program
+pvalloc (3)          - allocate aligned memory
+realloc (3)          - allocate and free dynamic memory
+rename (2)           - change the name or location of a file
+renameat (2)         - change the name or location of a file
+renameat2 (2)        - change the name or location of a file
+req (1ssl)           - PKCS#10 certificate request and certificate generating...
+rindex (3)           - locate character in string
+shmget (2)           - allocates a System V shared memory segment
+sigevent (7)         - structure for notification from asynchronous routines
+slabinfo (5)         - kernel slab allocator statistics
+snmp.conf (5)        - configuration files for the Net-SNMP applications
+socket (2)           - create an endpoint for communication
+ssh-add (1)          - adds private key identities to the authentication agent
+ssh-agent (1)        - authentication agent
+ssh-keygen (1)       - authentication key generation, management and conversion
+ssh-keysign (8)      - ssh helper program for host-based authentication
+STAILQ_CONCAT (3)    - implementations of singly-linked lists, singly-linked ...
+strcasestr (3)       - locate a substring
+strcat (3)           - concatenate two strings
+strchr (3)           - locate character in string
+strchrnul (3)        - locate character in string
+strdup (3)           - duplicate a string
+strdupa (3)          - duplicate a string
+strncat (3)          - concatenate two strings
+strndup (3)          - duplicate a string
+strndupa (3)         - duplicate a string
+strrchr (3)          - locate character in string
+strstr (3)           - locate a substring
+svipc (7)            - System V interprocess communication mechanisms
+systemd-cat (1)      - Connect a pipeline or program's output with the journal
+systemd-sysusers (8) - Allocate system users and groups
+systemd-sysusers.service (8) - Allocate system users and groups
+systemd.time (7)     - Time and date specifications
+sysusers.d (5)       - Declarative allocation of system users and groups
+tac (1)              - concatenate and print files in reverse
+TAILQ_CONCAT (3)     - implementations of singly-linked lists, singly-linked ...
+tarcat (1)           - concatenates the pieces of a GNU tar multi-volume archive
+tc-cake (8)          - Common Applications Kept Enhanced (CAKE)
+tee (2)              - duplicating pipe content
+telldir (3)          - return current location in directory stream
+truncate (1)         - shrink or extend the size of a file to the specified size
+truncate (2)         - truncate a file to a specified length
+truncate64 (2)       - truncate a file to a specified length
+Try::Tiny (3pm)      - Minimal try/catch with proper preservation of $@
+unix (7)             - sockets for local interprocess communication
+update-ca-certificates (8) - update /etc/ssl/certs and ca-certificates.crt
+URI::ldap (3pm)      - LDAP Uniform Resource Locators
+URI::URL (3pm)       - Uniform Resource Locators
+usb_modeswitch_dispatcher (1) - Linux wrapper for usb_modeswitch (not intende...
+utime (2)            - change file last access and modification times
+utimes (2)           - change file last access and modification times
+valloc (3)           - allocate aligned memory
+vasprintf (3)        - print to allocated string
+verify (1ssl)        - Utility to verify certificates
+wcscat (3)           - concatenate two wide-character strings
+wcsdup (3)           - duplicate a wide-character string
+wcsncat (3)          - concatenate two wide-character strings
+wcsstr (3)           - locate a substring in a wide-character string
+wctype (3)           - wide-character classification
+whereis (1)          - locate the binary, source, and manual page files for a...
+which (1)            - locate a command
+x509 (1ssl)          - Certificate display and signing utility
+x509 (7ssl)          - X.509 certificate handling
+x509v3_config (5ssl) - X509 V3 certificate extension configuration format
+xdg-open (1)         - opens a file or URL in the user's preferred application
+xfce4-sensors (1)    - Sensors application for xfce4
+xlsclients (1)       - list client applications running on a display
+XStandards (7)       - X Window System Standards and Specifications
+xzcat (1)            - Compress or decompress .xz and .lzma files
+zcat (1)             - compress or expand files
+sysadmin@operacao:~$ apropos clean
+
+Executando comando man como buscador de ajuda
+sysadmin@operacao:~$ man -k clear
+clear (1)            - clear the terminal screen
+clear_console (1)    - clear the console
+clearenv (3)         - clear the environment
+clearerr (3)         - check and reset stream status
+clearerr_unlocked (3) - nonlocking stdio functions
+feclearexcept (3)    - floating-point rounding and exception handling
+klogctl (3)          - read and/or clear kernel message ring buffer; set co...
+syslog (2)           - read and/or clear kernel message ring buffer; set co...
+syslog (3)           - read and/or clear kernel message ring buffer; set co...
+timerclear (3)       - timeval operations
+
+Fazendo buscas com o comando apropos
+sysadmin@operacao:~$ apropos cat
+catman (8)           - cria ou atualiza as páginas de manual pré-formatadas
+debconf-communicate (1) - comunica-se com debconf
+PAM (7)              - Pluggable Authentication Modules for Linux
+aligned_alloc (3)    - allocate aligned memory
+alloc_hugepages (2)  - allocate or free huge pages
+alloca (3)           - allocate memory that is automatically freed
+appres (1)           - list X application resource database
+apt-secure (8)       - Archive authentication support for APT
+asprintf (3)         - print to allocated string
+Authen::SASL (3pm)   - SASL Authentication framework
+Authen::SASL::Perl (3pm) - - Perl implementation of the SASL Authentication...
+Authen::SASL::Perl::ANONYMOUS (3pm) - Anonymous Authentication class
+Authen::SASL::Perl::CRAM_MD5 (3pm) - CRAM MD5 Authentication class
+Authen::SASL::Perl::DIGEST_MD5 (3pm) - Digest MD5 Authentication class
+Authen::SASL::Perl::EXTERNAL (3pm) - External Authentication class
+Authen::SASL::Perl::GSSAPI (3pm) - GSSAPI (Kerberosv5) Authentication class
+Authen::SASL::Perl::LOGIN (3pm) - Login Authentication class
+Authen::SASL::Perl::PLAIN (3pm) - Plain Login Authentication class
+backtrace (3)        - support for application self-debugging
+backtrace_symbols (3) - support for application self-debugging
+backtrace_symbols_fd (3) - support for application self-debugging
+bdftruncate (1)      - generate truncated BDF font from ISO 10646-1-encoded...
+bindtextdomain (3)   - set directory containing message catalogs
+blkid (8)            - locate/print block device attributes
+bzcat (1)            - decompresses files to stdout
+ca (1ssl)            - sample minimal CA application
+CA.pl (1ssl)         - friendlier interface for OpenSSL certificate programs
+calloc (3)           - allocate and free dynamic memory
+cat (1)              - concatenate files and print on the standard output
+catan (3)            - complex arc tangents
+catanf (3)           - complex arc tangents
+catanh (3)           - complex arc tangents hyperbolic
+catanhf (3)          - complex arc tangents hyperbolic
+catanhl (3)          - complex arc tangents hyperbolic
+catanl (3)           - complex arc tangents
+catchsegv (1)        - Catch segmentation faults in programs
+catclose (3)         - open/close a message catalog
+catgets (3)          - get message from a message catalog
+catopen (3)          - open/close a message catalog
+cfree (3)            - free allocated memory
+crl2pkcs7 (1ssl)     - Create a PKCS#7 structure from a CRL and certificates
+ct (7ssl)            - Certificate Transparency
+cupstestdsc (1)      - test conformance of postscript files (deprecated)
+deallocvt (1)        - deallocate unused virtual consoles
+dup (2)              - duplicate a file descriptor
+dup2 (2)             - duplicate a file descriptor
+dup3 (2)             - duplicate a file descriptor
+duplocale (3)        - duplicate a locale object
+editres (1)          - a dynamic resource editor for X Toolkit applications
+epoll (7)            - I/O event notification facility
+eventfd (2)          - create a file descriptor for event notification
+eventfd2 (2)         - create a file descriptor for event notification
+eventfd_read (3)     - create a file descriptor for event notification
+eventfd_write (3)    - create a file descriptor for event notification
+exo-open (1)         - Open URLs and launch preferred applications
+exo-preferred-applications (1) - Select preferred applications for Xfce des...
+fallocate (1)        - preallocate or deallocate space to a file
+fallocate (2)        - manipulate file space
+fc-cat (1)           - read font information cache files
+File::BaseDir (3pm)  - Use the Freedesktop.org base directory specification
+File::MimeInfo::Applications (3pm) - Find programs to open a file by mimetype
+finite (3)           - BSD floating-point classification functions
+finitef (3)          - BSD floating-point classification functions
+finitel (3)          - BSD floating-point classification functions
+fpclassify (3)       - floating-point classification macros
+free (3)             - allocate and free dynamic memory
+free_hugepages (2)   - allocate or free huge pages
+ftruncate (2)        - truncate a file to a specified length
+ftruncate64 (2)      - truncate a file to a specified length
+gapplication (1)     - D-Bus application launcher
+gencat (1)           - Generate message catalog
+getpid (2)           - get process identification
+getppid (2)          - get process identification
+gets (3)             - get a string from standard input (DEPRECATED)
+gettid (2)           - get thread identification
+git-cat-file (1)     - Provide content or type and size information for rep...
+Glib::Signal (3pm)   - Object customization and general purpose notification
+gpg-connect-agent (1) - Communicate with a running agent
+gsec (1)             - - deprecated Firebird user management utility
+gtk-launch (1)       - Launch an application
+gvfs-cat (1)         - (assunto desconhecido)
+gvfs-less (1)        - Execute less on the output of gvfs-cat
+HTML::Parse (3pm)    - Deprecated, a wrapper around HTML::TreeBuilder
+iconv_close (3)      - deallocate descriptor for character set conversion
+iconv_open (3)       - allocate descriptor for character set conversion
+index (3)            - locate character in string
+IO::Socket::SSL::Utils (3pm) - - loading, storing, creating certificates an...
+ipc (5)              - System V interprocess communication mechanisms
+isalnum (3)          - character classification functions
+isalnum_l (3)        - character classification functions
+isalpha (3)          - character classification functions
+isalpha_l (3)        - character classification functions
+isascii (3)          - character classification functions
+isascii_l (3)        - character classification functions
+isblank (3)          - character classification functions
+isblank_l (3)        - character classification functions
+iscntrl (3)          - character classification functions
+iscntrl_l (3)        - character classification functions
+isdigit (3)          - character classification functions
+isdigit_l (3)        - character classification functions
+isfinite (3)         - floating-point classification macros
+isgraph (3)          - character classification functions
+isgraph_l (3)        - character classification functions
+isinf (3)            - floating-point classification macros
+isinff (3)           - BSD floating-point classification functions
+isinfl (3)           - BSD floating-point classification functions
+islower (3)          - character classification functions
+islower_l (3)        - character classification functions
+isnan (3)            - floating-point classification macros
+isnanf (3)           - BSD floating-point classification functions
+isnanl (3)           - BSD floating-point classification functions
+isnormal (3)         - floating-point classification macros
+isprint (3)          - character classification functions
+isprint_l (3)        - character classification functions
+ispunct (3)          - character classification functions
+ispunct_l (3)        - character classification functions
+isspace (3)          - character classification functions
+isspace_l (3)        - character classification functions
+issue (5)            - prelogin message and identification file
+isupper (3)          - character classification functions
+isupper_l (3)        - character classification functions
+iswctype (3)         - wide-character classification
+isxdigit (3)         - character classification functions
+isxdigit_l (3)       - character classification functions
+java (1)             - Launches a Java application.
+keytool (1)          - Manages a keystore (database) of cryptographic keys,...
+LWP::Authen::Ntlm (3pm) - Library for enabling NTLM authentication (Microso...
+LWP::Debug (3pm)     - deprecated
+lzcat (1)            - Compress or decompress .xz and .lzma files
+mailcap.order (5)    - the mailcap ordering specifications
+mallinfo (3)         - obtain memory allocation information
+malloc (3)           - allocate and free dynamic memory
+malloc_stats (3)     - print memory allocation statistics
+malloc_usable_size (3) - obtain size of block of memory allocated from heap
+mallopt (3)          - set memory allocation parameters
+memalign (3)         - allocate aligned memory
+memfrob (3)          - frobnicate (encrypt) a memory area
+memmem (3)           - locate a substring
+mq_notify (2)        - register for notification when a message is available
+mq_notify (3)        - register for notification when a message is available
+Net::DBus::Error (3pm) - Error details for remote method invocation
+Net::DBus::Reactor (3pm) - application event loop
+netcat (1)           - TCP/IP swiss army knife
+netlink (7)          - communication between kernel and user space (AF_NETL...
+notify-send (1)      - a program to send desktop notifications
+nseq (1ssl)          - create or examine a Netscape certificate sequence
+ntfscat (8)          - print NTFS files and streams on the standard output
+ntfsfallocate (8)    - preallocate space to a file on an NTFS volume
+ntfstruncate (8)     - truncate a file on an NTFS volume
+ocsp (1ssl)          - Online Certificate Status Protocol utility
+openssl-ca (1ssl)    - sample minimal CA application
+openssl-crl2pkcs7 (1ssl) - Create a PKCS#7 structure from a CRL and certifi...
+openssl-nseq (1ssl)  - create or examine a Netscape certificate sequence
+openssl-ocsp (1ssl)  - Online Certificate Status Protocol utility
+openssl-req (1ssl)   - PKCS#10 certificate request and certificate generati...
+openssl-verify (1ssl) - Utility to verify certificates
+openssl-x509 (1ssl)  - Certificate display and signing utility
+os-release (5)       - Operating system identification
+pacat (1)            - Play back or record raw or encoded audio streams on ...
+pam (7)              - Pluggable Authentication Modules for Linux
+pam_faildelay (8)    - Change the delay on failure per-application
+pam_timestamp (8)    - Authenticate using cached successful authentication ...
+pam_unix (8)         - Module for traditional password authentication
+pam_userdb (8)       - PAM module to authenticate against a db database
+perlivp (1)          - Perl Installation Verification Procedure
+pkey_alloc (2)       - allocate or free a protection key
+pkey_free (2)        - allocate or free a protection key
+pkttyagent (1)       - Textual authentication helper
+posix_fallocate (3)  - allocate file space
+posix_memalign (3)   - allocate aligned memory
+pppd-radius (8)      - RADIUS authentication plugin for pppd (8)
+precat (1)           - prefix delta compressor for Aspell
+program_invocation_name (3) - obtain name used to invoke calling program
+program_invocation_short_name (3) - obtain name used to invoke calling program
+pvalloc (3)          - allocate aligned memory
+realloc (3)          - allocate and free dynamic memory
+rename (2)           - change the name or location of a file
+renameat (2)         - change the name or location of a file
+renameat2 (2)        - change the name or location of a file
+req (1ssl)           - PKCS#10 certificate request and certificate generati...
+rindex (3)           - locate character in string
+shmget (2)           - allocates a System V shared memory segment
+sigevent (7)         - structure for notification from asynchronous routines
+slabinfo (5)         - kernel slab allocator statistics
+snmp.conf (5)        - configuration files for the Net-SNMP applications
+socket (2)           - create an endpoint for communication
+ssh-add (1)          - adds private key identities to the authentication agent
+ssh-agent (1)        - authentication agent
+ssh-keygen (1)       - authentication key generation, management and conver...
+ssh-keysign (8)      - ssh helper program for host-based authentication
+STAILQ_CONCAT (3)    - implementations of singly-linked lists, singly-linke...
+strcasestr (3)       - locate a substring
+strcat (3)           - concatenate two strings
+strchr (3)           - locate character in string
+strchrnul (3)        - locate character in string
+strdup (3)           - duplicate a string
+strdupa (3)          - duplicate a string
+strncat (3)          - concatenate two strings
+strndup (3)          - duplicate a string
+strndupa (3)         - duplicate a string
+strrchr (3)          - locate character in string
+strstr (3)           - locate a substring
+svipc (7)            - System V interprocess communication mechanisms
+systemd-cat (1)      - Connect a pipeline or program's output with the journal
+systemd-sysusers (8) - Allocate system users and groups
+systemd-sysusers.service (8) - Allocate system users and groups
+systemd.time (7)     - Time and date specifications
+sysusers.d (5)       - Declarative allocation of system users and groups
+tac (1)              - concatenate and print files in reverse
+TAILQ_CONCAT (3)     - implementations of singly-linked lists, singly-linke...
+tarcat (1)           - concatenates the pieces of a GNU tar multi-volume ar...
+tc-cake (8)          - Common Applications Kept Enhanced (CAKE)
+tee (2)              - duplicating pipe content
+telldir (3)          - return current location in directory stream
+truncate (1)         - shrink or extend the size of a file to the specified...
+truncate (2)         - truncate a file to a specified length
+truncate64 (2)       - truncate a file to a specified length
+Try::Tiny (3pm)      - Minimal try/catch with proper preservation of $@
+unix (7)             - sockets for local interprocess communication
+update-ca-certificates (8) - update /etc/ssl/certs and ca-certificates.crt
+URI::ldap (3pm)      - LDAP Uniform Resource Locators
+URI::URL (3pm)       - Uniform Resource Locators
+usb_modeswitch_dispatcher (1) - Linux wrapper for usb_modeswitch (not inten...
+utime (2)            - change file last access and modification times
+utimes (2)           - change file last access and modification times
+valloc (3)           - allocate aligned memory
+vasprintf (3)        - print to allocated string
+verify (1ssl)        - Utility to verify certificates
+wcscat (3)           - concatenate two wide-character strings
+wcsdup (3)           - duplicate a wide-character string
+wcsncat (3)          - concatenate two wide-character strings
+wcsstr (3)           - locate a substring in a wide-character string
+wctype (3)           - wide-character classification
+whereis (1)          - locate the binary, source, and manual page files for...
+which (1)            - locate a command
+x509 (1ssl)          - Certificate display and signing utility
+x509 (7ssl)          - X.509 certificate handling
+x509v3_config (5ssl) - X509 V3 certificate extension configuration format
+xdg-open (1)         - opens a file or URL in the user's preferred application
+xfce4-sensors (1)    - Sensors application for xfce4
+xlsclients (1)       - list client applications running on a display
+XStandards (7)       - X Window System Standards and Specifications
+xzcat (1)            - Compress or decompress .xz and .lzma files
+zcat (1)             - compress or expand files
+
+Pesquisando usando whatis
+sysadmin@operacao:~$ whatis cat
+cat (1)              - concatenate files and print on the standard output
+
+Fazendo pesquisa com man -f
+sysadmin@operacao:~$ man -f cat
+cat (1)              - concatenate files and print on the standard output
+
+
+sysadmin@operacao:~$ whereis cat
+cat: /usr/bin/cat /usr/share/man/man1/cat.1.gz
+sysadmin@operacao:~$ man cat
+sysadmin@operacao:~$ cat -n /etc/apt/sources.list
+     1	deb http://deb.debian.org/debian/ buster main contrib non-free
+     2	deb-src http://deb.debian.org/debian/ buster main contrib non-free
+     3	
+     4	deb http://deb.debian.org/debian/ buster-updates main contrib non-free
+     5	deb-src http://deb.debian.org/debian/ buster-updates main contrib non-free
+     6	
+
+
+sysadmin@operacao:~$ which python
+/usr/bin/python
+
+sysadmin@operacao:~$ type python
+python é /usr/bin/python
+
+sysadmin@operacao:~$ python
+Python 2.7.16 (default, Oct 10 2019, 22:02:15) 
+[GCC 8.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "Hello World"
+Hello World
+>>> 
+
+sysadmin@operacao:~$ which ls
+/usr/bin/ls
+
+sysadmin@operacao:~$ which script01.sh 
+/usr/local/bin/script01.sh
+
+sysadmin@operacao:~$ su -
+Senha:
+root@operacao:~# 
+
+
+root@operacao:~# apt install -y info
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências       
+Lendo informação de estado... Pronto
+The following additional packages will be installed:
+  install-info
+Pacotes sugeridos:
+  texinfo-doc-nonfree
+Os NOVOS pacotes a seguir serão instalados:
+  info install-info
+0 pacotes atualizados, 2 pacotes novos instalados, 0 a serem removidos e 173 não atualizados.
+É preciso baixar 765 kB de arquivos.
+Depois desta operação, 993 kB adicionais de espaço em disco serão usados.
+Obter:1 http://deb.debian.org/debian buster/main amd64 install-info amd64 6.5.0.dfsg.1-4+b1 [343 kB]
+Obter:2 http://deb.debian.org/debian buster/main amd64 info amd64 6.5.0.dfsg.1-4+b1 [422 kB]
+Baixados 765 kB em 0s (4.398 kB/s)
+A seleccionar pacote anteriormente não seleccionado install-info.
+(Lendo banco de dados ... 105433 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../install-info_6.5.0.dfsg.1-4+b1_amd64.deb ...
+A descompactar install-info (6.5.0.dfsg.1-4+b1) ...
+Configurando install-info (6.5.0.dfsg.1-4+b1) ...
+A seleccionar pacote anteriormente não seleccionado info.
+(Lendo banco de dados ... 105448 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../info_6.5.0.dfsg.1-4+b1_amd64.deb ...
+A descompactar info (6.5.0.dfsg.1-4+b1) ...
+Configurando info (6.5.0.dfsg.1-4+b1) ...
+update-alternatives: a usar /usr/bin/info para disponibilizar /usr/bin/infobrowser (infobrowser) em modo auto
+A processar 'triggers' para man-db (2.8.5-2) ...
+A processar 'triggers' para mime-support (3.62) ...
+
+root@operacao:~# info mkdir
+
+root@operacao:~# man ls
+
+root@operacao:~# ls -a
+.	   ARQ01.txt  .arquivooculto  .cache  .profile	   .viminfo
+..	   arquivo    .bash_history   .gnupg  script01.sh
+arq01.txt  ARQUIVO    .bashrc	      .local  .synaptic
+
+root@operacao:~# ls -l
+total 8
+-rw-r--r-- 1 root root  0 set 23 21:50 arq01.txt
+-rw-r--r-- 1 root root  0 set 23 21:51 ARQ01.txt
+-rw-r--r-- 1 root root 10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root  0 set 23 21:51 ARQUIVO
+-rwxr-xr-x 1 root root 41 set 23 22:25 script01.sh
+
+root@operacao:~# man ls
+
+root@operacao:~# ls -li
+total 8
+664561 -rw-r--r-- 1 root root  0 set 23 21:50 arq01.txt
+664562 -rw-r--r-- 1 root root  0 set 23 21:51 ARQ01.txt
+664753 -rw-r--r-- 1 root root 10 set 23 21:59 arquivo
+664750 -rw-r--r-- 1 root root  0 set 23 21:51 ARQUIVO
+664756 -rwxr-xr-x 1 root root 41 set 23 22:25 script01.sh
+
+root@operacao:~# man ls
+
+root@operacao:~# ls --color
+arq01.txt  ARQ01.txt  arquivo  ARQUIVO  script01.sh
+
+root@operacao:~# mkdir teste
+
+root@operacao:~# ls --color
+arq01.txt  ARQ01.txt  arquivo  ARQUIVO  script01.sh  teste
+
+root@operacao:~# ls --color -l
+total 12
+-rw-r--r-- 1 root root    0 set 23 21:50 arq01.txt
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQ01.txt
+-rw-r--r-- 1 root root   10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQUIVO
+-rwxr-xr-x 1 root root   41 set 23 22:25 script01.sh
+drwxr-xr-x 2 root root 4096 set 27 20:45 teste
+
+
+root@operacao:~# ls --color -lh
+total 12K
+-rw-r--r-- 1 root root    0 set 23 21:50 arq01.txt
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQ01.txt
+-rw-r--r-- 1 root root   10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQUIVO
+-rwxr-xr-x 1 root root   41 set 23 22:25 script01.sh
+drwxr-xr-x 2 root root 4,0K set 27 20:45 teste
+root@operacao:~# man ls
+
+
+root@operacao:~# ls --color 
+arq01.txt  ARQ01.txt  arquivo  ARQUIVO  script01.sh  teste
+
+
+root@operacao:~# ls --color -lR
+.:
+total 12
+-rw-r--r-- 1 root root    0 set 23 21:50 arq01.txt
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQ01.txt
+-rw-r--r-- 1 root root   10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQUIVO
+-rwxr-xr-x 1 root root   41 set 23 22:25 script01.sh
+drwxr-xr-x 2 root root 4096 set 27 20:45 teste
+
+./teste:
+total 0
+
+root@operacao:~# man ls
+
+root@operacao:~# ls --color --sort=size -lR
+.:
+total 12
+drwxr-xr-x 2 root root 4096 set 27 20:45 teste
+-rwxr-xr-x 1 root root   41 set 23 22:25 script01.sh
+-rw-r--r-- 1 root root   10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root    0 set 23 21:50 arq01.txt
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQ01.txt
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQUIVO
+
+./teste:
+total 0
+
+root@operacao:~# ls --color --sort=time -lR
+.:
+total 12
+drwxr-xr-x 2 root root 4096 set 27 20:45 teste
+-rwxr-xr-x 1 root root   41 set 23 22:25 script01.sh
+-rw-r--r-- 1 root root   10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQUIVO
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQ01.txt
+-rw-r--r-- 1 root root    0 set 23 21:50 arq01.txt
+
+./teste:
+total 0
+
+root@operacao:~# ls --color --sort=extension -lR
+.:
+total 12
+-rw-r--r-- 1 root root   10 set 23 21:59 arquivo
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQUIVO
+drwxr-xr-x 2 root root 4096 set 27 20:45 teste
+-rwxr-xr-x 1 root root   41 set 23 22:25 script01.sh
+-rw-r--r-- 1 root root    0 set 23 21:50 arq01.txt
+-rw-r--r-- 1 root root    0 set 23 21:51 ARQ01.txt
+
+./teste:
+total 0
+
+
+Comando touch - Criar arquivo vazio
+root@operacao:~# touch arq01.txt
+root@operacao:~# ls
+arq01.txt  ARQ01.txt  arquivo  ARQUIVO  script01.sh  teste
+root@operacao:~# touch arq02.txt frutas.doc relatorio
+root@operacao:~# ls
+arq01.txt  arq02.txt  ARQUIVO     relatorio    teste
+ARQ01.txt  arquivo    frutas.doc  script01.sh
+
+
+Comando mkdir - Criar diretórios (pasta)
+root@operacao:~# mkdir saopaulo
+root@operacao:~# mkdir minasgerais
+root@operacao:~# ls
+arq01.txt  arq02.txt  ARQUIVO     minasgerais  saopaulo     teste
+ARQ01.txt  arquivo    frutas.doc  relatorio    script01.sh
+
+
+
+Criando arquivos e diretórios ocultos
+Criando o arquivo oculto ".oculto"
+root@operacao:~# touch .oculto
+root@operacao:~# echo 123456 > .oculto 
+root@operacao:~# cat .oculto 
+123456
+root@operacao:~# ls
+arq01.txt  arq02.txt  ARQUIVO     relatorio    teste
+ARQ01.txt  arquivo    frutas.doc  script01.sh
+root@operacao:~# ls -a
+.          arq02.txt       .bash_history  .gnupg    relatorio    .viminfo
+..         arquivo         .bashrc        .local    script01.sh
+arq01.txt  ARQUIVO         .cache         .oculto   .synaptic
+ARQ01.txt  .arquivooculto  frutas.doc     .profile  teste
+
+
+Criando o diretório oculto ".caicaoculta"
+root@operacao:~# mkdir .caixaoculta
+root@operacao:~# 
+root@operacao:~# 
+root@operacao:~# ls
+arq01.txt  arq02.txt  ARQUIVO     minasgerais  saopaulo     teste
+ARQ01.txt  arquivo    frutas.doc  relatorio    script01.sh
+root@operacao:~# ls -la
+total 68
+drwx------ 10 root root 4096 set 27 21:41 .
+drwxr-xr-x 19 root root 4096 out 24  2020 ..
+-rw-r--r--  1 root root    0 set 27 21:35 arq01.txt
+-rw-r--r--  1 root root    0 set 23 21:51 ARQ01.txt
+-rw-r--r--  1 root root    0 set 27 21:36 arq02.txt
+-rw-r--r--  1 root root   10 set 23 21:59 arquivo
+-rw-r--r--  1 root root    0 set 23 21:51 ARQUIVO
+-rw-r--r--  1 root root    0 set 23 22:12 .arquivooculto
+-rw-------  1 root root 1425 set 23 22:52 .bash_history
+-rw-r--r--  1 root root  559 set 27 21:30 .bashrc
+drwx------  3 root root 4096 set 20 22:02 .cache
+drwxr-xr-x  2 root root 4096 set 27 21:41 .caixaoculta
+-rw-r--r--  1 root root    0 set 27 21:36 frutas.doc
+drwx------  3 root root 4096 set 20 21:20 .gnupg
+drwxr-xr-x  3 root root 4096 out 24  2020 .local
+drwxr-xr-x  2 root root 4096 set 27 21:41 minasgerais
+-rw-r--r--  1 root root    7 set 27 21:38 .oculto
+-rw-r--r--  1 root root  148 ago 17  2015 .profile
+-rw-r--r--  1 root root    0 set 27 21:36 relatorio
+drwxr-xr-x  2 root root 4096 set 27 21:40 saopaulo
+-rwxr-xr-x  1 root root   41 set 23 22:25 script01.sh
+drwx------  3 root root 4096 set 20 22:06 .synaptic
+drwxr-xr-x  2 root root 4096 set 27 20:45 teste
+-rw-------  1 root root 1070 out 24  2020 .viminfo
+
+
+Criar o diretório e os subdiretórios brasil/sul/{PR,SC,RS} com uma única instrução
+
+root@operacao:~# mkdir brasil/sul/{PR,SC,RS}
+mkdir: não foi possível criar o diretório “brasil/sul/PR”: Arquivo ou diretório inexistente
+mkdir: não foi possível criar o diretório “brasil/sul/SC”: Arquivo ou diretório inexistente
+mkdir: não foi possível criar o diretório “brasil/sul/RS”: Arquivo ou diretório inexistente
+
+Como os diretórios brasil e sul não existem é necessário usar o mkdir com a opção -p ativada
+root@operacao:~# mkdir -p brasil/sul/{PR,SC,RS}
+
+Instalando o programa tree
+root@operacao:~# apt install tree -y
+Lendo listas de pacotes... Pronto
+Construindo árvore de dependências       
+Lendo informação de estado... Pronto
+Os NOVOS pacotes a seguir serão instalados:
+  tree
+0 pacotes atualizados, 1 pacotes novos instalados, 0 a serem removidos e 173 não atualizados.
+É preciso baixar 49,3 kB de arquivos.
+Depois desta operação, 117 kB adicionais de espaço em disco serão usados.
+Obter:1 http://deb.debian.org/debian buster/main amd64 tree amd64 1.8.0-1 [49,3 kB]
+Baixados 49,3 kB em 0s (798 kB/s)
+A seleccionar pacote anteriormente não seleccionado tree.
+(Lendo banco de dados ... 105463 ficheiros e directórios actualmente instalados.)
+A preparar para desempacotar .../tree_1.8.0-1_amd64.deb ...
+A descompactar tree (1.8.0-1) ...
+Configurando tree (1.8.0-1) ...
+A processar 'triggers' para man-db (2.8.5-2) ...
+
+
+Executar o comando tree no diretório brasil
+root@operacao:~# tree brasil
+brasil
+└── sul
+    ├── PR
+    ├── RS
+    └── SC
+
+4 directories, 0 files
+
+root@operacao:~# mkdir -p brasil/centroeste/{GO,DF,MS,MT}
+root@operacao:~# 
+root@operacao:~# 
+root@operacao:~# tree brasil
+brasil
+├── centroeste
+│   ├── DF
+│   ├── GO
+│   ├── MS
+│   └── MT
+└── sul
+    ├── PR
+    ├── RS
+    └── SC
+
+9 directories, 0 files
+
+
+root@operacao:~# touch brasil/centroeste/carta{DF,GO,MS,MT}.doc
+root@operacao:~# tree brasil
+brasil
+├── centroeste
+│   ├── cartaDF.doc
+│   ├── cartaGO.doc
+│   ├── cartaMS.doc
+│   ├── cartaMT.doc
+│   ├── DF
+│   ├── GO
+│   ├── MS
+│   └── MT
+└── sul
+    ├── PR
+    ├── RS
+    └── SC
+
+9 directories, 4 files
+
+root@operacao:~# touch arq00{1..9}.txt
+root@operacao:~# ls
+arq001.txt  arq005.txt  arq009.txt  arquivo     minasgerais  teste
+arq002.txt  arq006.txt  arq01.txt   ARQUIVO     relatorio
+arq003.txt  arq007.txt  ARQ01.txt   brasil      saopaulo
+arq004.txt  arq008.txt  arq02.txt   frutas.doc  script01.sh
+
+root@operacao:~# touch brasil/sul/carta{PR,RS,SC}.doc
+
+
+root@operacao:~# tree brasil/sul
+brasil/sul
+├── cartaPR.doc
+├── cartaRS.doc
+├── cartaSC.doc
+├── PR
+├── RS
+└── SC
+
+3 directories, 3 files
+
+Criando arquivos usando expressões sequenciais
+root@operacao:~# touch {a..e}n{1..5}.txt
+root@operacao:~# ls
+an1.txt     arq003.txt  arq01.txt  bn3.txt  cn4.txt  en1.txt      relatorio
+an2.txt     arq004.txt  ARQ01.txt  bn4.txt  cn5.txt  en2.txt      saopaulo
+an3.txt     arq005.txt  arq02.txt  bn5.txt  dn1.txt  en3.txt      script01.sh
+an4.txt     arq006.txt  arquivo    brasil   dn2.txt  en4.txt      teste
+an5.txt     arq007.txt  ARQUIVO    cn1.txt  dn3.txt  en5.txt
+arq001.txt  arq008.txt  bn1.txt    cn2.txt  dn4.txt  frutas.doc
+arq002.txt  arq009.txt  bn2.txt    cn3.txt  dn5.txt  minasgerais
+
+root@operacao:~# pwd
+/root
+
+
+root@operacao:~# ls brasil/
+centroeste  sul
+
+root@operacao:~# rmdir brasil
+rmdir: falhou em remover 'brasil': Diretório não vazio
+
+
+root@operacao:~# rmdir minasgerais
+root@operacao:~# ls minasgerais
+ls: não foi possível acessar 'minasgerais/': Arquivo ou diretório inexistente
+root@operacao:~# ls
+an1.txt     arq003.txt  arq01.txt  bn3.txt  cn4.txt  en1.txt     saopaulo
+an2.txt     arq004.txt  ARQ01.txt  bn4.txt  cn5.txt  en2.txt     script01.sh
+an3.txt     arq005.txt  arq02.txt  bn5.txt  dn1.txt  en3.txt     teste
+an4.txt     arq006.txt  arquivo    brasil   dn2.txt  en4.txt
+an5.txt     arq007.txt  ARQUIVO    cn1.txt  dn3.txt  en5.txt
+arq001.txt  arq008.txt  bn1.txt    cn2.txt  dn4.txt  frutas.doc
+arq002.txt  arq009.txt  bn2.txt    cn3.txt  dn5.txt  relatorio
+
+root@operacao:~# rm frutas.doc 
+
+root@operacao:~# ls
+an1.txt     arq003.txt  arq01.txt  bn3.txt  cn4.txt  en1.txt    script01.sh
+an2.txt     arq004.txt  ARQ01.txt  bn4.txt  cn5.txt  en2.txt    teste
+an3.txt     arq005.txt  arq02.txt  bn5.txt  dn1.txt  en3.txt
+an4.txt     arq006.txt  arquivo    brasil   dn2.txt  en4.txt
+an5.txt     arq007.txt  ARQUIVO    cn1.txt  dn3.txt  en5.txt
+arq001.txt  arq008.txt  bn1.txt    cn2.txt  dn4.txt  relatorio
+arq002.txt  arq009.txt  bn2.txt    cn3.txt  dn5.txt  saopaulo
+
+
+root@operacao:~# cd brasil/sul/RS/
+root@operacao:~/brasil/sul/RS# pwd
+/root/brasil/sul/RS
+
+root@operacao:~/brasil/sul/RS# cd
+root@operacao:~# cd minasgerais/
+root@operacao:~/minasgerais# cd
+root@operacao:~# ls /
+bin   home            lib32       media  root  sys  vmlinuz
+boot  initrd.img      lib64       mnt    run   tmp  vmlinuz.old
+dev   initrd.img.old  libx32      opt    sbin  usr
+etc   lib             lost+found  proc   srv   var
+root@operacao:~# ls
+an1.txt     arq003.txt  arq01.txt  bn3.txt  cn4.txt  en1.txt      relatorio
+an2.txt     arq004.txt  ARQ01.txt  bn4.txt  cn5.txt  en2.txt      saopaulo
+an3.txt     arq005.txt  arq02.txt  bn5.txt  dn1.txt  en3.txt      script01.sh
+an4.txt     arq006.txt  arquivo    brasil   dn2.txt  en4.txt      teste
+an5.txt     arq007.txt  ARQUIVO    cn1.txt  dn3.txt  en5.txt
+arq001.txt  arq008.txt  bn1.txt    cn2.txt  dn4.txt  frutas.doc
+arq002.txt  arq009.txt  bn2.txt    cn3.txt  dn5.txt  minasgerais
+
+
+
+
+
+
+
+
+
+
+
+

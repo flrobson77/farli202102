@@ -1,0 +1,153 @@
+Quem é o usuário logado?
+#whoami
+#w
+#who
+
+Qual o nome da máquina?
+#hostname
+
+
+Variavel do sistema que armazena o nome do usuário logado
+#echo $USER
+
+
+Qual é o diretório que estou trabalhando no momento?
+#pwd
+
+Promove o usuario comum para root
+$su -
+
+
+Promove qualquer usuário sem levar as caracteristicas
+deste novo usuario
+
+$su
+
+Retornar ao usuário logado
+$exit
+ou
+Atalho ctrl + d
+
+Sistema Operacional GNU/Linux
+Case Sensitive
+Maiúsculas e minúsculas são diferentes
+
+Arquivo
+ARQUIVO
+arquivo
+
+Os arquivos não precisam ter extensão
+
+arquivo.txt -> todas as letra, simbolos e números fazem parte
+do nome do arquivo
+
+Qual é o tipo de arquivo?
+#file
+
+Criar arquivo vazio
+#touch
+
+Lista arquivos e diretórios
+#ls
+
+Ecoa mensagem na tela
+#echo mensagem
+
+Exibe o histórico de comandos
+#history
+
+Pesquisar no histórico
+ctrl + r
+
+Executar uma instrução do histórico
+#!<Número da linha>
+
+Comando que limpa a tela do terminal
+#clear
+
+Atalho --> ctrl + l
+
+clear
+
+Exibe o conteúdo do arquivo /etc/passwd sem precisar abrir no editor de texto
+cat /etc/passwd
+
+Exibe o conteúdo do arquivo /etc/passwd sem precisar abrir no editor de texto com os números da linha
+cat -n /etc/passwd
+
+Lista arquivos e diretório de modo detalhado incluindo os ocultos do diretório /home/sysadmin
+#ls -l -a /home/sysadmin
+
+Os arquivos e diretórios oculto são criados com ponto final na frente do nome do arquivo
+#touch .arquivooculto
+
+Exibe a variável $PATH
+   80  echo $PATH
+
+
+   82  which ls
+Comando para verificar se um comando é interno ou externo
+#type echo
+#type cd
+
+#echo $SHELL
+Variável do sistema que exibe o SHELL do usuário
+
+Vamos exemplificar essa questão de comandos internos ou externos
+Execute o comando abaixo para editar o script01.sh
+#nano script01.sh
+
+Edite o arquivo script01.sh
+
+#!/bin/bash
+
+echo "hello world"
+sleep 3
+
+Execute o atalho ctrl + x
+Salve o script
+Saia do arquivo
+
+Inclua a permissão de execução do script
+#chmod +x script01.sh
+
+Execute o script
+#./script01.sh 
+
+Observando a variavel de ambiente $PATH
+
+Copiando o script01.sh para /usr/local/bin e transformando num comando externo
+#cp script01.sh /usr/local/bin
+
+Execute agora o comando externo script01.sh
+#script01.sh 
+
+Observe com o comando type que é um script e foi transformado em um comando externo
+#type script01.sh 
+
+Executando o a pagina de manual builtins você tem uma lista das instruções internas do shell
+#man builtins
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
